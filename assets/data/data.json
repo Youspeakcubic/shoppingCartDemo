@@ -1,0 +1,143 @@
+{
+"main": [
+  {
+    prodName: "Wolf Squishmallow",
+    id= 1,
+    price= 19.99,
+    reviews= 5,
+    imageSrc="../images/",
+  }
+  {
+    prodName: "Shark Squishmallow",
+    id= 2,
+    price= 15.99,
+    reviews= 5,
+    imageSrc="../images/",
+    }
+  {
+    prodName: "Axolotl Squishmallow",
+    id= 3,
+    price=  24.99,
+    reviews= 4,
+    imageSrc="../images/",
+    }
+  {
+    prodName: "Rainbow Lion Squishmallow",
+    id= 4,
+    price= 30.50,
+    reviews= 3,
+    imageSrc="../images/",
+    }
+  {
+    prodName: "Orca Squishmallow",
+    id= 5,
+    price= 22.99,
+    reviews= 3,
+    imageSrc="../images/",
+  {
+    prodName: "Orca Squishmallow",
+    id= 5,
+    price= 22.99,
+    reviews= 3,
+    imageSrc="../images/",
+  }
+  {
+    prodName: "Orca Squishmallow",
+    id= 5,
+    price= 22.99,
+    reviews= 3,
+    imageSrc="../images/",
+  }
+  {
+    prodName: "Orca Squishmallow",
+    id= 5,
+    price= 22.99,
+    reviews= 3,
+    imageSrc="../images/",
+  }
+  {
+    prodName: "Orca Squishmallow",
+    id= 5,
+    price= 22.99,
+    reviews= 3,
+    imageSrc="../images/",
+  }
+  {
+    prodName: "Orca Squishmallow",
+    id= 5,
+    price= 22.99,
+    reviews= 3,
+    imageSrc="../images/",
+  }
+  {
+    prodName: "Orca Squishmallow",
+    id= 5,
+    price= 22.99,
+    reviews= 3,
+    imageSrc="../images/",
+  }
+  {
+    prodName: "Orca Squishmallow",
+    id= 5,
+    price= 22.99,
+    reviews= 3,
+    imageSrc="../images/",
+  }
+  {
+    prodName: "Orca Squishmallow",
+    id= 5,
+    price= 22.99,
+    reviews= 3,
+    imageSrc="../images/",
+  }
+  {
+    prodName: "Orca Squishmallow",
+    id= 5,
+    price= 22.99,
+    reviews= 3,
+    imageSrc="../images/",
+  }
+  {
+    prodName: "Orca Squishmallow",
+    id= 5,
+    price= 22.99,
+    reviews= 3,
+    imageSrc="../images/",
+  }
+  {
+    prodName: "Orca Squishmallow",
+    id= 5,
+    price= 22.99,
+    reviews= 3,
+    imageSrc="../images/",
+  }
+  {
+    prodName: "Orca Squishmallow",
+    id= 5,
+    price= 22.99,
+    reviews= 3,
+    imageSrc="../images/",
+  }
+  {
+    prodName: "Orca Squishmallow",
+    id= 5,
+    price= 22.99,
+    reviews= 3,
+    imageSrc="../images/",
+  }
+  {
+    prodName: "Orca Squishmallow",
+    id= 5,
+    price= 22.99,
+    reviews= 3,
+    imageSrc="../images/",
+  }
+  {
+    prodName: "Orca Squishmallow",
+    id= 5,
+    price= 22.99,
+    reviews= 3,
+    imageSrc="../images/",  
+  }
+]
+}
