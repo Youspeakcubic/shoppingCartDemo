@@ -1,6 +1,16 @@
+html{overflow-x: hidden;}
+.wrapper{overflow-x: hidden;}
+
 body{
   margin:0;
+  text-align:center;
 }
+
 .product{
   text-align: center;
+}
+
+.cart{
+  height: 100%;
+  float: right;
 }
