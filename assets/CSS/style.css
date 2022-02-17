@@ -5,12 +5,17 @@ body{
   margin:0;
   text-align:center;
 }
-
 .product{
   text-align: center;
 }
-
+.catalog{
+  display:flex;
+  justify-content: center;
+}
 .cart{
-  height: 100%;
-  float: right;
+  background-color: #C6AC8F;
+  height: 1000px;
+}
+.cartNone{
+  display:none;
 }
