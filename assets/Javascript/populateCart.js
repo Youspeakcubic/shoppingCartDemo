@@ -1,10 +1,16 @@
 let cartContainer = document.getElementById("cart");
-let catalogCont = document.getElementById("catalog")
+let catalogCont = document.getElementById("catalog");
+let cartElem = document.getElementById("cartTotal");
+
+let cartCounter = 0;
+let priceCounter =0;
+
 let dataObj;
 fetch("data.json")
 .then(res => res.json())
 .then(data => dataObj = data)
 let populateCart = (id) => {
+  addToTotal(dataObj.main[id].price);
   console.log(dataObj);
   let cartItem =
   `<div class="card cartItem" id="product${id}">
@@ -22,4 +28,12 @@ let populateCart = (id) => {
   cartContainer.appendChild(createDiv);
   cartContainer.className = "cart col-lg-3 col-md col-sm";
   catalogCont.className = "catalog col-lg-9 row";
+}
+
+
+let addToTotal = (price) => {
+  cartCounter++;
+  priceCounter += price;
+  cartElem.innerHTML = `${cartCounter} items in your cart`;
+  document.getElementById("totalCount").innerHTML = `Total:$${priceCounter}`
 }

@@ -11,32 +11,32 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Support</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled"></a>
-            </li>
-          </ul>
-        </div>
+  <!-- navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Support</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled"></a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
+  <div class="wrapper">
     <!-- main products -->
     <div class="main row" id="main">
       <!-- products catalog -->
@@ -45,8 +45,12 @@
       </div>
       <!-- cart -->
       <div class="cart cartNone" id="cart">
-        <h3 id="totalCount">Total:</h>
-        <h2>Items in cart:</h>
+        <div class="totalCount">
+          <hr>
+          <h3 id="totalCount">Total:</h3>
+          <button type="button" class="btn btn-warning">proceed to checkout</button>
+        </div>
+        <h2 id="cartTotal">Items in cart:</h>
         <hr>
       </div>
       <!-- end cart -->
@@ -54,9 +58,9 @@
   </div>
   <!-- bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="assets\Javascript\removeItem.js"></script>
   <script type="text/javascript" src="assets\Javascript\populateCart.js"></script>
   <script type="text/javascript" src="assets\Javascript\populateMain.js"></script>
+    <script type="text/javascript" src="assets\Javascript\removeItem.js"></script>
 </body>
 
 </html>
