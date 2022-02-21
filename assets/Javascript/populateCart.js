@@ -7,7 +7,7 @@ fetch("data.json")
 let populateCart = (id) => {
   console.log(dataObj);
   let cartItem =
-  `<div class="card" id="product${id}">
+  `<div class="card cartItem" id="product${id}">
     <h5 class="card-header">${dataObj.main[id].prodName}</h5>
     <div class="card-body">
       <p class="card-text">${dataObj.main[id].desc}</p>
