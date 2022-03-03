@@ -8,6 +8,9 @@ body{
   margin:0;
   text-align:center;
 }
+i{
+  font-size: 3rem;
+}
 /* navbar styling */
 
 /* main container styling */
@@ -43,6 +46,11 @@ body{
 .cartItem{
   margin: 5% 2%;
 }
+.hideBtn{
+  position: absolute;
+  left:0;
+  top:50%;
+}
 /* checkout section */
 .totalCount{
   width:100%;
@@ -59,4 +67,16 @@ body{
 .btn-warning{
   display:block !important;
   text-align:center;
+}
+/* animations */
+@keyframes cartHide {
+ 0%{
+
+ }
+ 100%{
+
+ }
+}
+@keyframes cartShow {
+
 }
