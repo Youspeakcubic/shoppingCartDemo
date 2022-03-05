@@ -17,7 +17,17 @@ i{
 .main {
   margin: 10% 0;
 }
-
+.hideBtn{
+  position: absolute;
+  right:0;
+  top:50%;
+  z-index: 15;
+  width:50px !important;
+  height:50px;
+}
+.hideCartIcon{
+  font-size: 15rem;
+}
 /* catalog styling */
 
 .product{
@@ -45,11 +55,6 @@ i{
 }
 .cartItem{
   margin: 5% 2%;
-}
-.hideBtn{
-  position: absolute;
-  left:0;
-  top:50%;
 }
 /* checkout section */
 .totalCount{
