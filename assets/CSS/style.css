@@ -1,11 +1,11 @@
 .wrapper{
   overflow-x: hidden;
   overflow-y: hidden;
-  margin: 3%;
+  margin: 5% 0 0 ;
 }
 
 body{
-  margin:0;
+  margin: 0;
   text-align:center;
 }
 i{
@@ -26,7 +26,17 @@ i{
   height:50px;
 }
 .hideCartIcon{
-  font-size: 15rem;
+  font-size: 2rem;
+}
+/* banner row styling */
+
+/* carousel styling */
+.carousel {
+height:500px;
+margin: 0 0 10%;
+}
+.carousel-item{
+  height:500px;
 }
 /* catalog styling */
 
