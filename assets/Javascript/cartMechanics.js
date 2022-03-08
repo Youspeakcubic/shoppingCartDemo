@@ -30,3 +30,5 @@ let removeElement = (elem, id) => {
   document.getElementById("totalCount").innerHTML = `Total: $${priceCounter}`
   console.log("totals changed");
 }
+
+//icon changing on clicking/opening cart

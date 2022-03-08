@@ -11,6 +11,9 @@ body{
 i{
   font-size: 3rem;
 }
+ul{
+  list-style: none;
+}
 /* navbar styling */
 
 /* main container styling */
@@ -19,17 +22,33 @@ i{
 }
 .hideBtn{
   position: absolute;
-  right:0;
-  top:50%;
+  right:5%;
+  top:25%;
   z-index: 15;
-  width:50px !important;
-  height:50px;
+  width:25px !important;
+  height:25px;
+  background-color: transparent;
+  border:none;
 }
 .hideCartIcon{
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 /* banner row styling */
-
+/* categories ul styling */
+.categories{
+  display:flex;
+  justify-content: space-between;
+  flex-direction:column;
+  height:500px;
+}
+.catArrow{
+  font-size: 1rem;
+}
+.catItem{
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+}
 /* carousel styling */
 .carousel {
 height:500px;
@@ -58,7 +77,8 @@ margin: 0 0 10%;
   right:0;
   background-color: white;
   border:solid grey 1px;
-  height:95%;
+  height:100%;
+  margin-bottom: 100%;
 }
 .cartNone{
   display:none;
