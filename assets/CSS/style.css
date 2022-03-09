@@ -34,6 +34,20 @@ ul{
   font-size: 1.5rem;
 }
 /* banner row styling */
+.bannerRow{
+  border-bottom: grey solid 2px;
+  box-shadow: 0px 20px 15px grey;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,0.09005609079569332) 0%, rgba(255,255,255,1) 67%, rgba(255,255,255,1) 100%, rgba(251,254,255,1) 100%);
+}
+/* banner items styling */
+.bannerItem{
+  width:80% !important;
+  position:absolute;
+  right:3%;
+  bottom:25%;
+  z-index: 10;
+}
 /* categories ul styling */
 .categories{
   display:flex;
@@ -52,10 +66,14 @@ ul{
 /* carousel styling */
 .carousel {
 height:500px;
-margin: 0 0 10%;
+margin: 0;
 }
 .carousel-item{
   height:500px;
+}
+/* deals container */
+.dealContainer{
+  margin: 10% 0 0 0;
 }
 /* catalog styling */
 

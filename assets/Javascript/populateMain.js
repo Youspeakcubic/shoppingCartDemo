@@ -1,5 +1,5 @@
 let container = document.getElementById("catalog");
-fetch("data.json")
+fetch("./assets/public/data.json")
 .then(res => res.json())
 .then(data => populate(data))
 let populate = (data) => {

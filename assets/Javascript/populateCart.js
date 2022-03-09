@@ -15,7 +15,7 @@ let dataObj;
 
 //fetching data from json file and putting said data into the variable above ^
 
-fetch("data.json")
+fetch("./assets/public/data.json")
 .then(res => res.json())
 .then(data => dataObj = data)
 
