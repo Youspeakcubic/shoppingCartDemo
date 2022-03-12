@@ -1,6 +1,7 @@
 //dom element variables
 
-let cartContainer = document.getElementById("cart");
+let cartContainer = document.getElementById("cartCont");
+let trueCart = document.getElementById("cart");
 let catalogCont = document.getElementById("catalog");
 let cartElem = document.getElementById("cartTotal");
 

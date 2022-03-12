@@ -1,135 +1,194 @@
-.wrapper{
-  overflow-x: hidden;
+.wrapper {
+  overflow-x: scroll;
   overflow-y: hidden;
-  margin: 5% 0 0 ;
+  margin: 5% 0 0;
 }
 
-body{
+body {
   margin: 0;
-  text-align:center;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.09005609079569332) 0%, rgba(255, 255, 255, 1) 67%, rgba(255, 255, 255, 1) 100%, rgba(251, 254, 255, 1) 100%);
 }
-i{
-  font-size: 3rem;
-}
-ul{
-  list-style: none;
-}
-/* navbar styling */
 
+h1 {
+  font-size: 1.25vw;
+  font-family: 'Smooch Sans', sans-serif;
+}
+
+h2 {
+  font-size: 1.25vw;
+  font-family: 'Smooch Sans', sans-serif;
+}
+
+h3 {
+  font-size: 1.25vw;
+  font-family: 'Smooch Sans', sans-serif;
+}
+h5{
+  font-size: 1.25vw !important;
+  font-family: 'Smooch Sans', sans-serif;
+
+}
+
+p {
+  font-size: 1vw;
+  font-family: 'Titillium Web', sans-serif;
+}
+a{
+  font-size: 1.25vw !important;
+}
+ul {
+  list-style: none;
+  margin-bottom: 0 !important;
+}
+
+li {
+  font-size: 1.25vw;
+  font-family: 'Smooch Sans', sans-serif;
+}
+
+/* navbar styling */
+.navbar {}
+.navbarIcon{
+  width:5vw;
+  height:4vh;
+}
 /* main container styling */
 .main {
   margin: 10% 0;
 }
-.hideBtn{
+
+.hideBtn {
   position: absolute;
-  right:5%;
-  top:25%;
+  right: 5%;
+  top: 25%;
   z-index: 15;
-  width:25px !important;
-  height:25px;
+  width: 25px !important;
+  height: 25px;
   background-color: transparent;
-  border:none;
+  border: none;
 }
-.hideCartIcon{
-  font-size: 1.5rem;
+
+.hideCartIcon {
+  font-size: 1.25vw;
 }
+
 /* banner row styling */
-.bannerRow{
-  border-bottom: grey solid 2px;
-  box-shadow: 0px 20px 15px grey;
-  background: rgb(0,0,0);
-  background: linear-gradient(180deg, rgba(0,0,0,0.09005609079569332) 0%, rgba(255,255,255,1) 67%, rgba(255,255,255,1) 100%, rgba(251,254,255,1) 100%);
+.row {
+  padding: 0 0 0 0 !important;
 }
+
+.bannerRow {
+  border-bottom: lightgrey solid 2px;
+  box-shadow: 0px 20px 15px lightgrey;
+  background-color: transparent;
+  margin-bottom: 10%;
+}
+
 /* banner items styling */
-.bannerItem{
-  width:80% !important;
-  position:absolute;
-  right:3%;
-  bottom:25%;
+.bannerItem {
+  width: 95% !important;
+  position: absolute;
+  left: 5%;
+  bottom: 8%;
   z-index: 10;
 }
+
 /* categories ul styling */
-.categories{
-  display:flex;
+.categories {
+  display: flex;
   justify-content: space-between;
-  flex-direction:column;
-  height:500px;
+  flex-direction: column;
+  height: 90vh;
+  padding: 15% 8%;
 }
-.catArrow{
+
+.catArrow {
   font-size: 1rem;
 }
-.catItem{
+
+.catItem {
   width: 100%;
-  display:flex;
+  display: flex;
   justify-content: space-between;
 }
+
 /* carousel styling */
 .carousel {
-height:500px;
-margin: 0;
+  height: 90vh;
+  margin: 0;
+  padding: 0 0 0 0 !important;
 }
-.carousel-item{
-  height:500px;
+
+.carousel-item {
+  height: 90vh;
 }
+
 /* deals container */
-.dealContainer{
+.dealContainer {
   margin: 10% 0 0 0;
 }
-/* catalog styling */
 
-.product{
+/* catalog styling */
+.product {
   text-align: center;
 }
-.catalog{
+
+.catalog {
   margin: 10% 0;
-  height:100%;
-  display:flex;
+  height: 100%;
+  display: flex;
   justify-content: center;
 }
 
 /* cart styling */
-
-.cart{
-  overflow-y: scroll;
+.cart {
+  overflow-y: hidden;
   position: fixed;
-  right:0;
+  right: 0;
   background-color: white;
-  border:solid grey 1px;
-  height:100%;
+  border: solid grey 1px;
+  height: 100%;
   margin-bottom: 100%;
 }
-.cartNone{
-  display:none;
+#cart{
+  overflow-y: scroll;
 }
-.cartItem{
+
+.cartNone {
+  display: none;
+}
+
+.cartItem {
   margin: 5% 2%;
 }
+
 /* checkout section */
-.totalCount{
-  width:100%;
-  padding:.5% .5% 3%;
+.totalCount {
+  width: 100%;
+  padding: .5% .5% 3%;
   background-color: white;
   position: fixed;
-  margin:0;
-  bottom:0%;
+  margin: 0;
+  bottom: 0%;
   z-index: 10;
 }
-#totalCount{
+
+#totalCount {
   margin-bottom: 2%;
 }
-.btn-warning{
-  display:block !important;
-  text-align:center;
+
+.btn-warning {
+  display: block !important;
+  text-align: center;
 }
+
 /* animations */
 @keyframes cartHide {
- 0%{
+  0% {}
 
- }
- 100%{
-
- }
+  100% {}
 }
-@keyframes cartShow {
 
-}
+@keyframes cartShow {}
