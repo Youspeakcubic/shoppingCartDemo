@@ -1,14 +1,12 @@
 .wrapper {
   overflow-x: scroll;
   overflow-y: hidden;
-  margin: 5% 0 0;
+  margin:0;
 }
 
 body {
   margin: 0;
   text-align: center;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.09005609079569332) 0%, rgba(255, 255, 255, 1) 67%, rgba(255, 255, 255, 1) 100%, rgba(251, 254, 255, 1) 100%);
 }
 
 h1 {
@@ -54,6 +52,17 @@ li {
   width:5vw;
   height:4vh;
 }
+/* nav button banner styling */
+.navBanner{
+  font-size: 1.25vw;
+  font-family: 'Smooch Sans', sans-serif;
+  width:100%;
+  text-align: center;
+  background-color: blue;
+  color:white;
+  padding: 1%;
+  margin: 3.5% 0 0 0;
+}
 /* main container styling */
 .main {
   margin: 10% 0;
@@ -87,21 +96,29 @@ li {
 }
 
 /* banner items styling */
+.smallItemsRow{
+  position: absolute;
+  top:75vh;
+}
 .bannerItem {
   width: 95% !important;
   position: absolute;
-  left: 5%;
-  bottom: 8%;
+
   z-index: 10;
 }
 
 /* categories ul styling */
 .categories {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.09005609079569332) 0%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 80%, rgba(251, 254, 255, 1) 100%);
+  position: absolute;
+  top:0;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   height: 90vh;
-  padding: 15% 8%;
+  padding: 5% 6%;
+  margin: 7.5% 2%;
 }
 
 .catArrow {
@@ -184,6 +201,16 @@ li {
   text-align: center;
 }
 
+/* deal container styling */
+#dealContainer{
+  padding: 5% !important;
+}
+.dealRightCard img{
+  width: 50% !important;
+  margin-left: auto;
+  margin-right: auto;
+
+}
 /* animations */
 @keyframes cartHide {
   0% {}

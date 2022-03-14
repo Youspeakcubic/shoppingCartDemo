@@ -20,7 +20,7 @@
 <body>
 
   <!-- navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img class="navbarIcon" src="assets\images\bannerImages\navbarLogo.SVG" alt="">
@@ -44,17 +44,45 @@
       </div>
     </div>
   </nav>
+  <button class="navBanner">Shop confidently with 30-day hassle-free returns</button>
 
   <div class="wrapper">
 
     <!-- main products -->
+    <!-- carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide col-lg-12" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets\images\bannerImages\herobanner1.jpg" class="d-block w-100 h-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets\images\bannerImages\herobanner2.jpg" class="d-block w-100 h-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets\images\bannerImages\herobanner3.jpg" class="d-block w-100 h-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
     <div class="main row" id="main">
 
       <!-- products catalog -->
       <div class="catalog col-lg-12 col-md-12 col-sm-12 row" id="catalog">
         <div class="row bannerRow">
           <!-- categories ul -->
-          <div class="col-lg-2">
+          <div class="col-lg-3">
             <ul class="categories">
               <a onclick="">
                 <li class="catItem">Desktop Computers <i class="fa-solid fa-arrow-right catArrow"></i></li>
@@ -73,13 +101,11 @@
               </a>
             </ul>
           </div>
-
-          <!-- carousel -->
-          <div id="carouselExampleIndicators" class="carousel slide col-lg-10" data-bs-ride="carousel">
-
+        </div>
             <!-- banner -->
-            <div class="row bannerItem">
-              <div class="col-sm-4">
+            <div class="row smallItemsRow">
+            <div class="col-lg-3"></div>
+              <div class="col-lg-3">
                 <div class="card h-100 signInCard" style="text-align:center;">
                   <div class="card-body">
                     <h5 class="card-title">Sign in for the best experience!</h5>
@@ -89,7 +115,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-4">
+              <div class="col-lg-3">
                 <div class="card h-100">
                   <div class="card-body">
                     <h5 class="card-title">Special title treatment</h5>
@@ -98,7 +124,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-4">
+              <div class="col-lg-3">
                 <div class="card h-100">
                   <div class="card-body">
                     <h5 class="card-title">Special title treatment</h5>
@@ -107,34 +133,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="assets\images\bannerImages\herobanner1.jpg" class="d-block w-100 h-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="assets\images\bannerImages\herobanner2.jpg" class="d-block w-100 h-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="assets\images\bannerImages\herobanner3.jpg" class="d-block w-100 h-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
       </div>
       <!-- deals container -->
       <!-- <h1>Today's best deals:</h1>

@@ -14,44 +14,75 @@ let populate = (data, dealData) => {
 
   //the code below creates a row with multiple layed out cards, by filling out the template literal with data from multiple objects.
 
-  dealData.length = 4;
-
   let dealRow =
     `
-  <h1> Today's deals: </h1
-  <div class="row">
+  <h1> Today's deals: </h1>
+  <div class="row" id="dealContainer">
+
     <div class="card mb-3 col-lg-6">
       <img class="card-img-top" src="${dealData.main[0].imgSrc}" alt="Card image cap">
+
       <div class="card-body">
         <h5 class="card-title">${dealData.main[0].prodName}</h5>
         <p class="card-text">${dealData.main[0].desc}</p>
         <p class="card-text"><small class="text-muted">${dealData.main[0].price}</small></p>
         <p class="card-text"><small class="text-muted">${dealData.main[0].orinPrice}</small></p>
       </div>
+
     </div>
-    <div class="col-lg-6">
-      <div class="row">
-        <div class="card mb-3 col-lg-6">
-          <img class="card-img-top" src="${dealData.main[0].imgSrc}" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">${dealData.main[0].prodName}</h5>
-            <p class="card-text">${dealData.main[0].desc}</p>
-            <p class="card-text"><small class="text-muted">${dealData.main[0].price}</small></p>
-            <p class="card-text"><small class="text-muted">${dealData.main[0].orinPrice}</small></p>
-          </div>
+
+    <div class="row col-lg-6">
+
+      <div class="card dealRightCard col-lg-6">
+        <img class="card-img-top" src="${dealData.main[0].imgSrc}" alt="Card image cap">
+
+        <div class="card-body">
+          <h5 class="card-title">${dealData.main[0].prodName}</h5>
+          <p class="card-text">${dealData.main[0].desc}</p>
+          <p class="card-text"><small class="text-muted">${dealData.main[0].price}</small></p>
+          <p class="card-text"><small class="text-muted">${dealData.main[0].orinPrice}</small></p>
         </div>
-        <div class="card mb-3 col-lg-6">
-          <img class="card-img-top" src="${dealData.main[0].imgSrc}" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">${dealData.main[0].prodName}</h5>
-            <p class="card-text">${dealData.main[0].desc}</p>
-            <p class="card-text"><small class="text-muted">${dealData.main[0].price}</small></p>
-            <p class="card-text"><small class="text-muted">${dealData.main[0].orinPrice}</small></p>
-          </div>
-        </div>
+
       </div>
+
+      <div class="card dealRightCard col-lg-6">
+        <img class="card-img-top" src="${dealData.main[0].imgSrc}" alt="Card image cap">
+
+        <div class="card-body">
+          <h5 class="card-title">${dealData.main[0].prodName}</h5>
+          <p class="card-text">${dealData.main[0].desc}</p>
+          <p class="card-text"><small class="text-muted">${dealData.main[0].price}</small></p>
+          <p class="card-text"><small class="text-muted">${dealData.main[0].orinPrice}</small></p>
+        </div>
+
+      </div>
+
+      <div class="card dealRightCard col-lg-6">
+        <img class="card-img-top" src="${dealData.main[0].imgSrc}" alt="Card image cap">
+
+        <div class="card-body">
+          <h5 class="card-title">${dealData.main[0].prodName}</h5>
+          <p class="card-text">${dealData.main[0].desc}</p>
+          <p class="card-text"><small class="text-muted">${dealData.main[0].price}</small></p>
+          <p class="card-text"><small class="text-muted">${dealData.main[0].orinPrice}</small></p>
+        </div>
+
+      </div>
+
+      <div class="card dealRightCard col-lg-6">
+        <img class="card-img-top" src="${dealData.main[0].imgSrc}" alt="Card image cap">
+
+        <div class="card-body">
+          <h5 class="card-title">${dealData.main[0].prodName}</h5>
+          <p class="card-text">${dealData.main[0].desc}</p>
+          <p class="card-text"><small class="text-muted">${dealData.main[0].price}</small></p>
+          <p class="card-text"><small class="text-muted">${dealData.main[0].orinPrice}</small></p>
+        </div>
+
+      </div>
+
     </div>
-  </div>
+
   `
   const dealElement = document.createElement('div');
   dealElement.innerHTML = dealRow;
