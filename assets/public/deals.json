@@ -17,7 +17,7 @@
   "id": 2
 },
 {
-  "prodName": "Mpow M30 In-Ear Bluetooth Earbuds, Wireless Bluetooth Earphone for Sport, Immersive Sound w/Bass, IPX7 Sweatproof, Touch Control, 25 Hrs w/USB-C Charging Case/Mics",
+  "prodName": "Mpow M30 In-Ear Bluetooth Earbuds, Wireless Bluetooth Earphone ",
   "orinPrice": 16.04,
   "price": 14.44,
   "desc":"25 Hours of Punchy Bass Left or Right Mono Mode IPX7 Waterproof Aerospace-grade Technology Ergonomic In-ear Design",
@@ -25,11 +25,11 @@
   "id": 3
 },
 {
-  "prodName": "Seagate IronWolf 4TB NAS Hard Drive 5900 RPM 64MB Cache SATA 6.0Gb/s CMR 3.5 Internal HDD for RAID Network Attached Storage ST4000VN008 - OEM",
+  "prodName": "Seagate IronWolf 4TB NAS Hard Drive",
   "orinPrice": 110.99,
   "price": 79.99,
-  "desc": "gay gay gay gay",
-  "imgSrc": "assets\\images\\placeholder.png",
+  "desc": "Range of capacities up to 14TB. Workload rate of 180TB/year. Optimized for NAS with AgileArray, enables dual-plane balancing and RAID optimization in multi-bay environments. ",
+  "imgSrc": "assets\\images\\productImages\\seagateHDD.jpg",
   "id": 4
 },
 {

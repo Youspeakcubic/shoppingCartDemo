@@ -44,116 +44,156 @@
       </div>
     </div>
   </nav>
-  <button class="navBanner">Shop confidently with 30-day hassle-free returns</button>
-
+  <button class="navBanner" type="button" data-bs-toggle="collapse" data-bs-target="#navBannerContainer" aria-expanded="false" aria-controls="collapseExample">Shop confidently with 30-day hassle-free returns <i
+      class="fa-solid fa-caret-down"></i></button>
   <div class="wrapper">
-
-    <!-- main products -->
-    <!-- carousel -->
-    <div id="carouselExampleIndicators" class="carousel slide col-lg-12" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="assets\images\bannerImages\herobanner1.jpg" class="d-block w-100 h-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="assets\images\bannerImages\herobanner2.jpg" class="d-block w-100 h-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="assets\images\bannerImages\herobanner3.jpg" class="d-block w-100 h-100" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
     <div class="main row" id="main">
-
-      <!-- products catalog -->
       <div class="catalog col-lg-12 col-md-12 col-sm-12 row" id="catalog">
-        <div class="row bannerRow">
-          <!-- categories ul -->
-          <div class="col-lg-3">
-            <ul class="categories">
-              <a onclick="">
-                <li class="catItem">Desktop Computers <i class="fa-solid fa-arrow-right catArrow"></i></li>
-              </a>
-              <a onclick="">
-                <li class="catItem">Laptops <i class="fa-solid fa-arrow-right catArrow"></i></li>
-              </a>
-              <a onclick="">
-                <li class="catItem">Accessories <i class="fa-solid fa-arrow-right catArrow"></i></li>
-              </a>
-              <a onclick="">
-                <li class="catItem">Home Appliances <i class="fa-solid fa-arrow-right catArrow"></i></li>
-              </a>
-              <a onclick="">
-                <li class="catItem">Clearance <i class="fa-solid fa-arrow-right catArrow"></i></li>
-              </a>
-            </ul>
-          </div>
-        </div>
-            <!-- banner -->
-            <div class="row smallItemsRow">
-            <div class="col-lg-3"></div>
-              <div class="col-lg-3">
-                <div class="card h-100 signInCard" style="text-align:center;">
-                  <div class="card-body">
-                    <h5 class="card-title">Sign in for the best experience!</h5>
-                    <br>
-                    <a href="#" class="btn btn-warning">Sign in</a>
-                    <p class="card-text">Or sign up <a href="#">here!</a></p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-      </div>
-      <!-- deals container -->
-      <!-- <h1>Today's best deals:</h1>
-      <div id="deals" class="dealContainer">
 
-      </div> -->
-      <!-- cart -->
-      <div class="cart cartNone" id="cartCont" data-state="hidden">
-        <div class="totalCount">
-          <hr>
-          <h3 id="totalCount">Total:</h3>
-          <button type="button" class="btn btn-warning">proceed to checkout</button>
-        </div>
-        <h2 id="cartTotal">Items in cart:</h>
-          <hr>
-          <div id="cart">
-              <h1>gay</h>
+        <!-- nav banner info panel -->
+        <div class="navBannerContainer row collapse" id="navBannerContainer">
+          <div class="col-lg-4 navBannerItem">
+            <img class="navBannerImg" src="assets\images\decoImages\expedited__RestockingFee.png" alt="" />
+            <h1>No Restocking Fees</h1>
+            <h3>Say goodbye to hidden fees and costs when returning your items.</h3>
           </div>
+          <div class="col-lg-4 navBannerItem">
+            <img class="navBannerImg" src="assets\images\decoImages\expedited__Returns.png" alt="" />
+            <h1>Free Return Shipping*</h1>
+            <h3>Shop with no regrets; free return shipping makes returns painless. </h3>
+            <br />
+            <p>*Some exclusions apply: see details.</p>
+            <button class="btn btn-warning navBannerButton">SHOP TODAY'S BEST DEAL</button>
+          </div>
+          <div class="col-lg-4 navBannerItem">
+            <img class="navBannerImg" src="assets\images\decoImages\expedited__UPS.png" alt="" />
+            <h1>Convenient UPS Drop-Off</h1>
+            <h3>Return your items using thousands of locations throughout the US.</h3>
+          </div>
+        </div>
+
+        <!-- carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide col-lg-12" data-bs-ride="carousel">
+
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets\images\bannerImages\herobanner1.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets\images\bannerImages\herobanner2.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets\images\bannerImages\herobanner3.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <div class="row bannerRow">
+            <!-- categories ul -->
+            <div class="col-lg-3">
+              <ul class="categories">
+                <a onclick="">
+                  <li class="catItem"><i class="fa-solid fa-desktop"></i>Desktop Computers <i class="fa-solid fa-arrow-right catArrow"></i></li>
+                </a>
+                <a onclick="">
+                  <li class="catItem"><i class="fa-solid fa-laptop"></i>Laptops <i class="fa-solid fa-arrow-right catArrow"></i></li>
+                </a>
+                <a onclick="">
+                  <li class="catItem"><i class="fa-solid fa-computer-mouse"></i>Accessories <i class="fa-solid fa-arrow-right catArrow"></i></li>
+                </a>
+                <a onclick="">
+                  <li class="catItem"><i class="fa-solid fa-blender"></i>Home Appliances <i class="fa-solid fa-arrow-right catArrow"></i></li>
+                </a>
+                <a onclick="">
+                  <li class="catItem"><i class="fa-solid fa-dollar-sign"></i>Clearance <i class="fa-solid fa-arrow-right catArrow"></i></li>
+                </a>
+              </ul>
+            </div>
+          </div>
+          <!-- banner -->
+          <div class="row smallItemsRowHidden" id="smallItemsRow">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-3">
+              <div class="card h-100 signInCard" style="text-align:center;">
+                <div class="card-body">
+                  <h5 class="card-title">Sign in for the best experience!</h5>
+                  <br>
+                  <a href="#" class="btn btn-warning">Sign in</a>
+                  <p class="card-text">Or sign up <a href="#">here!</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+    <!-- cart -->
+    <div class="cart cartNone" id="cart" data-state="hidden">
+      <div class="totalCount">
+        <hr>
+        <h3 id="totalCount">Total:</h3>
+        <button type="button" class="btn btn-warning">proceed to checkout</button>
+      </div>
+      <h2 id="cartTotal">Items in cart:</h>
+        <hr>
     </div>
   </div>
+  </div>
+  <div class="infoPanelRow row">
+    <div class="infoPanelImgContainer">
+      <img class="neweggDeco1" src="assets\images\decoImages\whats_negg_decoration_01.png" alt="neweggDeco1">
+      <img class="neweggDeco2" src="assets\images\decoImages\whats_negg_decoration_02.png" alt="neweggDeco2">
+      <img class="neweggDeco3" src="assets\images\decoImages\whats_negg_decoration_03.png" alt="neweggDeco3">
+    </div>
+    <h1 class="infoPanelHeader">What's Newegg?</h1>
+    <div class="col-lg-4 infoPanelItem">
+      <h1>The Leading Tech-Focused e-Retailer</h>
+        <p>Today, millions of customers turn to Newegg to shop for the latest PC components, consumer electronics, smart home, gaming products and more.</p>
+        <img class="infoPanelImg" src="assets\images\decoImages\Newegg_01_Tech.png" />
+    </div>
+    <div class="col-lg-4 infoPanelItem">
+      <h1>Reliable & Award-Winning Experience</h>
+        <p>Newegg is consistently ranked as one of the best online shopping destinations, and the company regularly earns industry-leading customer service ratings.</p>
+        <img class="infoPanelImg" src="assets\images\decoImages\Newegg_02_Award.png" />
+    </div>
+    <div class="col-lg-4 infoPanelItem">
+      <img class="infoPanelImg" src="assets\images\decoImages\Newegg_03_Global.png" />
+      <h1>Global Shopping</h>
+        <p>Newegg is based in North America, with a global reach in Europe, South America, Asia Pacific and the Middle East.</p>
+    </div>
+  </div>
+  <footer>
+
+  </footer>
   <!-- scripts -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

@@ -1,11 +1,15 @@
+let landerBanner = document.getElementById("smallItemsRow");
+
 let hideCart = () => {
   if (cartContainer.dataset.state == "visible") {
     container.className = "catalog col-lg-12 col-md-12 col-sm-12 row"
+    landerBanner.className = "row smallItemsRowHidden";
     cartContainer.className = "cart cartNone";
     cartContainer.dataset.state ="hidden";
   }
   else if (cartContainer.dataset.state == "hidden") {
     cartContainer.className = "cart col-lg-3 col-md-4 col-sm-12";
+    landerBanner.className ="row smallItemsRowVisible"
     catalogCont.className = "catalog col-lg-9 col-md-8 col-sm row";
     cartContainer.dataset.state = "visible";
   }

@@ -1,5 +1,5 @@
 .wrapper {
-  overflow-x: scroll;
+  overflow-x: hidden;
   overflow-y: hidden;
   margin:0;
 }
@@ -62,10 +62,21 @@ li {
   color:white;
   padding: 1%;
   margin: 3.5% 0 0 0;
+  border:none;
+}
+.navBannerContainer{
+  text-align: center;
+}
+.navBannerImg{
+  width: 15%;
+  margin: 4%;
+}
+.navBannerButton{
+margin:4% auto;
 }
 /* main container styling */
 .main {
-  margin: 10% 0;
+  margin: 5% 0;
 }
 
 .hideBtn {
@@ -92,13 +103,20 @@ li {
   border-bottom: lightgrey solid 2px;
   box-shadow: 0px 20px 15px lightgrey;
   background-color: transparent;
-  margin-bottom: 10%;
+  margin-bottom: 2%;
 }
 
 /* banner items styling */
-.smallItemsRow{
+.smallItemsRowHidden{
   position: absolute;
-  top:75vh;
+  top:40vh;
+  width:100%;
+}
+.smallItemsRowVisible{
+  position: absolute;
+  width: 90%;
+  left:5vw;
+  top:35vh;
 }
 .bannerItem {
   width: 95% !important;
@@ -112,13 +130,13 @@ li {
   background: rgb(0, 0, 0);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.09005609079569332) 0%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 80%, rgba(251, 254, 255, 1) 100%);
   position: absolute;
-  top:0;
+  top:-15vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  height: 90vh;
-  padding: 5% 6%;
-  margin: 7.5% 2%;
+  height: 70vh;
+  padding: 3% 3% 5%;
+  margin: 7.5% 2% 7.5% 5%;
 }
 
 .catArrow {
@@ -133,18 +151,18 @@ li {
 
 /* carousel styling */
 .carousel {
-  height: 90vh;
+  height: 70vh;
   margin: 0;
   padding: 0 0 0 0 !important;
 }
 
 .carousel-item {
-  height: 90vh;
+  height: 70vh;
 }
 
 /* deals container */
 .dealContainer {
-  margin: 10% 0 0 0;
+  margin: 0 0 0 0;
 }
 
 /* catalog styling */
@@ -153,31 +171,26 @@ li {
 }
 
 .catalog {
-  margin: 10% 0;
+  margin: 10% 0 0;
   height: 100%;
   display: flex;
   justify-content: center;
 }
 
 /* cart styling */
-.cart {
-  overflow-y: hidden;
-  position: fixed;
-  right: 0;
-  background-color: white;
-  border: solid grey 1px;
-  height: 100%;
-  margin-bottom: 100%;
-}
-#cart{
+.cart{
   overflow-y: scroll;
+  position: fixed;
+  top:7.5%;
+  right:0;
+  background-color: white;
+  border:solid grey 1px;
+  height:90vh;
 }
-
-.cartNone {
-  display: none;
+.cartNone{
+  display:none;
 }
-
-.cartItem {
+.cartItem{
   margin: 5% 2%;
 }
 
@@ -209,7 +222,61 @@ li {
   width: 50% !important;
   margin-left: auto;
   margin-right: auto;
-
+}
+.mainDealImg{
+  margin-left:auto;
+  margin-right: auto;
+  width:75% !important;
+}
+.dealHeader{
+  font-size: 3.5vw;
+  margin:0 5%;
+}
+.card{
+  /* border:none !important; */
+}
+.dealsButton{
+  width:40% !important;
+  margin: 5% auto !important;
+}
+/* info panel styling */
+.infoPanelRow{
+  text-align: center;
+  background-color: #ECF1FE;
+  margin: 5% 0 0 0 !important;
+  padding: 4% 0 6% !important;
+}
+.infoPanelHeader{
+  margin:5% 0;
+}
+.infoPanelItem{
+  text-align: center;
+}
+.infoPanelImg{
+  width:50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.infoPanelImgContainer{
+  position:relative;
+}
+.neweggDeco1{
+  width:10% !important;
+  position: absolute;
+  left:0;
+  top:0;
+}
+.neweggDeco2{
+  width:5% !important;
+  position: absolute;
+  left:35%;
+  top:20%;
+}
+.neweggDeco3{
+  width:15% !important;
+  position:absolute;
+  left:55%;
+  top:100%;
 }
 /* animations */
 @keyframes cartHide {
