@@ -22,6 +22,7 @@
   <!-- navbar -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
+      <a onclick=""><i class="fa-solid fa-bars"></i></a>
       <a class="navbar-brand" href="#">
         <img class="navbarIcon" src="assets\images\bannerImages\navbarLogo.SVG" alt="">
       </a>
@@ -29,17 +30,10 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Support</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">FAQ</a>
-          </li>
-        </ul>
+        <form class="d-flex" style="width:75%;">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" style="width:5%;" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
         <button onclick="hideCart()" class="hideBtn"><i class="fa-solid fa-cart-arrow-down hideCartIcon"></i></button>
       </div>
     </div>
@@ -125,30 +119,56 @@
           <div class="row smallItemsRowHidden" id="smallItemsRow">
             <div class="col-lg-3"></div>
             <div class="col-lg-3">
-              <div class="card h-100 signInCard" style="text-align:center;">
+              <div class="card h-100" style="border-radius:8px">
                 <div class="card-body">
                   <h5 class="card-title">Sign in for the best experience!</h5>
-                  <br>
-                  <a href="#" class="btn btn-warning">Sign in</a>
-                  <p class="card-text">Or sign up <a href="#">here!</a></p>
+                  <br />
+                  <br />
+                  <div style="text-align:center;">
+                    <button href="#" style="border-radius: 10% / 50%;">Sign in</button>
+                    <p class="card-text">Or sign up <a href="#">here!</a></p>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col-lg-3">
-              <div class="card h-100">
+              <div class="card h-100" style="border-radius:8px">
                 <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">Recently viewed items</h5>
+                  <br />
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <img style="width:6vw;" src="assets\images\productImages\earphonesMpow.jpg" alt="earphones">
+                    </div>
+                    <div class="col-lg-4">
+                      <img style="width:6vw;" src="assets\images\productImages\lgTv.jpg" alt="lgTv">
+                    </div>
+                    <div class="col-lg-4">
+                      <img style="width:6vw;" src="assets\images\productImages\RosewillGlacier.jpg" alt="psu">
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col-lg-3">
-              <div class="card h-100">
+              <div class="card h-100" style="border-radius:8px">
                 <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">Categories you may be interested in</h5>
+                  <br />
+                  <div class="row">
+                    <div class="col-lg-4" style="text-align:center">
+                      <img style="width:6vw;" src="assets\images\catImages\HEADPHONECAT.jpg" alt="earphones">
+                      <p>Head phones</p>
+                    </div>
+                    <div class="col-lg-4" style="text-align:center">
+                      <img style="width:6vw;" src="assets\images\catImages\LEDTVCAT.jpg" alt="lgTv">
+                      <p>LED TV</p>
+                    </div>
+                    <div class="col-lg-4" style="text-align:center">
+                      <img style="width:6vw;" src="assets\images\catImages\SOUNDBARCAT.jpg" alt="psu">
+                      <p>Sound bars</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

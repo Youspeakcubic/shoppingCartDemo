@@ -1,34 +1,32 @@
 .wrapper {
   overflow-x: hidden;
   overflow-y: hidden;
+  width: 100%;
+  max-width: 100%;
   margin:0;
 }
 
 body {
+  width: 100%;
   margin: 0;
   text-align: center;
 }
 
-h1 {
-  font-size: 1.25vw;
+h1 ,h2, h3, h4 {
   font-family: 'Smooch Sans', sans-serif;
 }
-
+h1{
+  font-size: 1.5vw;
+}
 h2 {
   font-size: 1.25vw;
-  font-family: 'Smooch Sans', sans-serif;
 }
-
 h3 {
   font-size: 1.25vw;
-  font-family: 'Smooch Sans', sans-serif;
 }
 h5{
   font-size: 1.25vw !important;
-  font-family: 'Smooch Sans', sans-serif;
-
 }
-
 p {
   font-size: 1vw;
   font-family: 'Titillium Web', sans-serif;
@@ -45,9 +43,22 @@ li {
   font-size: 1.25vw;
   font-family: 'Smooch Sans', sans-serif;
 }
-
+input{
+  background-color: #ECF1FE;
+}
+button{
+  color:white;
+  background-color: #E05E00;
+  border:none;
+  padding: 12px 24px;
+  width:100%;
+  max-width: 200px;
+  margin: 0 auto;
+}
 /* navbar styling */
-.navbar {}
+.navbar {
+  padding:0 6.5vw !important;
+}
 .navbarIcon{
   width:5vw;
   height:4vh;
@@ -57,10 +68,12 @@ li {
   font-size: 1.25vw;
   font-family: 'Smooch Sans', sans-serif;
   width:100%;
+  max-width: 100%;
+  border-radius: 0%;
   text-align: center;
   background-color: blue;
   color:white;
-  padding: 1%;
+  padding: 0.25%;
   margin: 3.5% 0 0 0;
   border:none;
 }
@@ -76,9 +89,12 @@ margin:4% auto;
 }
 /* main container styling */
 .main {
+  width: 100%
   margin: 5% 0;
 }
-
+.catalog{
+  margin: 0 auto !important;
+}
 .hideBtn {
   position: absolute;
   right: 5%;
@@ -127,8 +143,7 @@ margin:4% auto;
 
 /* categories ul styling */
 .categories {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.09005609079569332) 0%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 80%, rgba(251, 254, 255, 1) 100%);
+  background-image: linear-gradient(180deg,#ECF1FE 61%,rgba(236,241,254,.7) 88%,rgba(236,241,254,0) 97%);
   position: absolute;
   top:-15vh;
   display: flex;
@@ -152,7 +167,8 @@ margin:4% auto;
 /* carousel styling */
 .carousel {
   height: 70vh;
-  margin: 0;
+  margin: 0 auto !important;
+  width:95% !important;
   padding: 0 0 0 0 !important;
 }
 
@@ -231,9 +247,6 @@ margin:4% auto;
 .dealHeader{
   font-size: 3.5vw;
   margin:0 5%;
-}
-.card{
-  /* border:none !important; */
 }
 .dealsButton{
   width:40% !important;
