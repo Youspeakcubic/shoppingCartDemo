@@ -57,11 +57,11 @@ button{
 }
 /* navbar styling */
 .navbar {
-  padding:0 6.5vw !important;
+  padding:.5vh 5vw !important;
 }
 .navbarIcon{
-  width:5vw;
-  height:4vh;
+  width:7.5vw;
+  height:5.5vh;
 }
 /* nav button banner styling */
 .navBanner{
@@ -71,7 +71,7 @@ button{
   max-width: 100%;
   border-radius: 0%;
   text-align: center;
-  background-color: blue;
+  background-color: #1946B8;
   color:white;
   padding: 0.25%;
   margin: 3.5% 0 0 0;
