@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans&family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
   <meta charset="utf-8">
   <title>Newegg clone by Anthony</title>
 </head>
@@ -30,10 +30,22 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <form class="d-flex" style="width:75%;">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" style="width:5%;" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
+        <div class="input-group mb-3" style="width:70%;">
+          <button style="width:8%; border-radius: 30% 0 0 30%; background-color:#ECF1FE; border:none;" class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">All</button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">All</a></li>
+            <li><a class="dropdown-item" href="#">Automotive Parts</a></li>
+          </ul>
+          <input type="text" style="background-color:#ECF1FE;" class="form-control" aria-label="Text input with dropdown button">
+          <button class="btn btn-outline-success" style="width:4%; background-color:#1946B8; border-radius: 0 30% 30% 0; color:white;" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <a><i class="far fa-bell"></i></a>
+        <a><i class="fas fa-flag"></i></a>
+        <div class="form-check form-switch">
+          <input type="checkbox" class="form-check-input" id="darkSwitch" />
+          <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+        </div>
+        <script src="dark-mode-switch.min.js"></script>
         <button onclick="hideCart()" class="hideBtn"><i class="fa-solid fa-cart-arrow-down hideCartIcon"></i></button>
       </div>
     </div>
@@ -57,7 +69,8 @@
             <h3>Shop with no regrets; free return shipping makes returns painless. </h3>
             <br />
             <p>*Some exclusions apply: see details.</p>
-            <button class="btn btn-warning navBannerButton">SHOP TODAY'S BEST DEAL</button>
+            <button style="border-radius: 10% / 50%; max-width:250px;">SHOP TODAY'S BEST DEAL</button>
+            <br />
           </div>
           <div class="col-lg-4 navBannerItem">
             <img class="navBannerImg" src="assets\images\decoImages\expedited__UPS.png" alt="" />
@@ -98,19 +111,43 @@
             <div class="col-lg-3">
               <ul class="categories">
                 <a onclick="">
-                  <li class="catItem"><i class="fa-solid fa-desktop"></i>Desktop Computers <i class="fa-solid fa-arrow-right catArrow"></i></li>
+                  <li class="catItem"><i class="fa-solid fa-server"></i>Components <i class="fa-solid fa-arrow-right catArrow"></i></li>
                 </a>
                 <a onclick="">
-                  <li class="catItem"><i class="fa-solid fa-laptop"></i>Laptops <i class="fa-solid fa-arrow-right catArrow"></i></li>
+                  <li class="catItem"><i class="fa-solid fa-desktop"></i>Computer Systems <i class="fa-solid fa-arrow-right catArrow"></i></li>
                 </a>
                 <a onclick="">
-                  <li class="catItem"><i class="fa-solid fa-computer-mouse"></i>Accessories <i class="fa-solid fa-arrow-right catArrow"></i></li>
+                  <li class="catItem"><i class="fa-solid fa-headphones"></i>Electronics <i class="fa-solid fa-arrow-right catArrow"></i></li>
                 </a>
                 <a onclick="">
-                  <li class="catItem"><i class="fa-solid fa-blender"></i>Home Appliances <i class="fa-solid fa-arrow-right catArrow"></i></li>
+                  <li class="catItem"><i class="fa-solid fa-gamepad"></i>Gaming <i class="fa-solid fa-arrow-right catArrow"></i></li>
                 </a>
                 <a onclick="">
-                  <li class="catItem"><i class="fa-solid fa-dollar-sign"></i>Clearance <i class="fa-solid fa-arrow-right catArrow"></i></li>
+                  <li class="catItem"><i class="fa-solid fa-network-wired"></i>Networking <i class="fa-solid fa-arrow-right catArrow"></i></li>
+                </a>
+                <a onclick="">
+                  <li class="catItem"><i class="fa-solid fa-print"></i>Office Solutions <i class="fa-solid fa-arrow-right catArrow"></i></li>
+                </a>
+                <a onclick="">
+                  <li class="catItem"><i class="fa-solid fa-compact-disc"></i>Software & Services <i class="fa-solid fa-arrow-right catArrow"></i></li>
+                </a>
+                <a onclick="">
+                  <li class="catItem"><i class="fa-solid fa-car"></i> Automotive & powersports<i class="fa-solid fa-arrow-right catArrow"></i></li>
+                </a>
+                <a onclick="">
+                  <li class="catItem"><i class="fa-solid fa-screwdriver"></i> Home & Tools <i class="fa-solid fa-arrow-right catArrow"></i></li>
+                </a>
+                <a onclick="">
+                  <li class="catItem"><i class="fa-solid fa-football"></i>Health & sports <i class="fa-solid fa-arrow-right catArrow"></i></li>
+                </a>
+                <a onclick="">
+                  <li class="catItem"><i class="fa-solid fa-shirt"></i>Apparel & Accessories <i class="fa-solid fa-arrow-right catArrow"></i></li>
+                </a>
+                <a onclick="">
+                  <li class="catItem"><i class="fa-solid fa-chess"></i>Toys & Drones<i class="fa-solid fa-arrow-right catArrow"></i></li>
+                </a>
+                <a onclick="">
+                  <li class="catItem"><i class="fa-solid fa-fan"></i>Flowers & gifts <i class="fa-solid fa-arrow-right catArrow"></i></li>
                 </a>
               </ul>
             </div>
@@ -119,7 +156,7 @@
           <div class="row smallItemsRowHidden" id="smallItemsRow">
             <div class="col-lg-3"></div>
             <div class="col-lg-3">
-              <div class="card h-100" style="border-radius:8px">
+              <div class="card smallItemHeight" style="border-radius:8px">
                 <div class="card-body">
                   <h5 class="card-title">Sign in for the best experience!</h5>
                   <br />
@@ -132,7 +169,7 @@
               </div>
             </div>
             <div class="col-lg-3">
-              <div class="card h-100" style="border-radius:8px">
+              <div class="card smallItemHeight" style="border-radius:8px">
                 <div class="card-body">
                   <h5 class="card-title">Recently viewed items</h5>
                   <br />
@@ -151,7 +188,7 @@
               </div>
             </div>
             <div class="col-lg-3">
-              <div class="card h-100" style="border-radius:8px">
+              <div class="card smallItemHeight" style="border-radius:8px">
                 <div class="card-body">
                   <h5 class="card-title">Categories you may be interested in</h5>
                   <br />

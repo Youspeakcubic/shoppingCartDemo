@@ -40,8 +40,8 @@ ul {
 }
 
 li {
-  font-size: 1.25vw;
-  font-family: 'Smooch Sans', sans-serif;
+  font-size: .85vw;
+  font-family: 'Roboto Mono', monospace;
 }
 input{
   background-color: #ECF1FE;
@@ -79,6 +79,7 @@ button{
 }
 .navBannerContainer{
   text-align: center;
+  padding: 1% 0 !important;
 }
 .navBannerImg{
   width: 15%;
@@ -108,11 +109,12 @@ margin:4% auto;
 
 .hideCartIcon {
   font-size: 1.25vw;
+  color:black;
 }
 
 /* banner row styling */
 .row {
-  padding: 0 0 0 0 !important;
+  padding: 0 0 0 0;
 }
 
 .bannerRow {
@@ -125,22 +127,23 @@ margin:4% auto;
 /* banner items styling */
 .smallItemsRowHidden{
   position: absolute;
-  top:40vh;
+  top:45vh;
   width:100%;
 }
 .smallItemsRowVisible{
   position: absolute;
   width: 90%;
   left:5vw;
-  top:35vh;
+  top:40vh;
 }
 .bannerItem {
   width: 95% !important;
   position: absolute;
-
   z-index: 10;
 }
-
+.smallItemHeight{
+  height:90% !important;
+}
 /* categories ul styling */
 .categories {
   background-image: linear-gradient(180deg,#ECF1FE 61%,rgba(236,241,254,.7) 88%,rgba(236,241,254,0) 97%);
@@ -150,12 +153,13 @@ margin:4% auto;
   justify-content: space-between;
   flex-direction: column;
   height: 70vh;
-  padding: 3% 3% 5%;
-  margin: 7.5% 2% 7.5% 5%;
+  padding: 1.5% 1.5% 5%;
+  margin: 7.5% 0 7.5% 1.5%;
 }
 
 .catArrow {
   font-size: 1rem;
+  color:#999999;
 }
 
 .catItem {
